@@ -8,15 +8,6 @@ app.engine('mustache', mustacheExpress());
 app.set('views', './views');
 app.set('view engine', 'mustache');
 
-// function renderBots() {
-//       data.users.map(user =>
-//          { img: user.avatar,
-//            name: user.name,
-//            job: user.job
-//         });
-//
-// }
-
 
 app.get('/', function (req, res) {
   res.render('index',
@@ -27,22 +18,31 @@ app.get('/', function (req, res) {
   })
 });
 
-// app.get('/', function (req,res) {
-//    res.send('Meet Bot Squad')
+
+// //NOTE: This rendered everything as TAGS on the page (with the appropriate data pulled for each bot....)...
+// // now how to figure out how to pass this to the index.mustache and then back to the app to render the index as done below?
+// var bots = data.users;
+// function renderBots() {
+//    return `
+//       ${bots.map(bot =>
+//          `<ul class="botcontainer">
+//           <li>
+//             <img src="${bot.avatar}" alt="oops!-caught-in-the-cloud">
+//           </li>
+//           <li>${bot.name}</li>
+//           <li>${bot.job}</li>
+//           <li>${bot.company}</li>
+//           </ul>
+//           `).join('')}
+//
+//    `;
+// }
+//
+//
+// app.get('/', function (req, res) {
+//   res.render('index', renderBots());
 // });
 
 app.listen(3000, function () {
   console.log('App Start Successful!')
 });
-
-// _____________CONNECT CHANNEL ^^
-
-
-
-
-
-// Register '.mustache' extension with The Mustache Express
-
-app.get('/', function (req, res) {
-  res.render('index', { userName: 'Sam' })
-})
