@@ -9,7 +9,6 @@ app.set('views', './views');
 app.set('view engine', 'mustache');
 
 // function renderBots() {
-//    return
 //       data.users.map(user =>
 //          { img: user.avatar,
 //            name: user.name,
@@ -23,7 +22,8 @@ app.get('/', function (req, res) {
   res.render('index',
   { img: data.users[0].avatar,
     name: data.users[0].name,
-    job: data.users[0].job
+    job: data.users[0].job,
+    company: data.users[0].company
   })
 });
 
