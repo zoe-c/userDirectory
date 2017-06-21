@@ -5,20 +5,23 @@
       <title>userDirectory</title>
    </head>
    <body>
-      {{#bots}}
-      <!-- <div id="botsContainer"> -->
-         <ul class ="bot">
-            <li class="image"><img src= {{avatar}} ></li>
-            <li class="name"> {{name}} </li>
-            <li class="job"> {{job}}
-               {{^job}}
-                  <li class="noJob"> Available for hire </li>
-               {{/job}}
-            </li>
-            <li class="company"> {{company}} </li>
-         </ul>
-      <!-- </div> -->
-      {{/bots}}
+      <div id="botsContainer">
 
+         {{#bots}}
+
+            <ul class ="bot">
+               <li class="image"><img src= {{avatar}} ></li>
+               <li class="name"> {{name}} </li>
+               <li class="job"> {{job}}
+                  {{^job}}
+                     <li class="noJob"> Available for hire </li>
+                  {{/job}}
+               </li>
+               <li class="company"> {{company}} </li>
+            </ul>
+
+         {{/bots}}
+
+      </div>
    </body>
 </html>
