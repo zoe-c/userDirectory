@@ -5,12 +5,20 @@
       <title>userDirectory</title>
    </head>
    <body>
-      <div id="robot-container">
-         <img src= {{img}} >
-         <h2> {{name}} </h2>
-         <p> {{job}} </p>
-         <p> {{company}} </p>
-      </div>
+      {{#bots}}
+      <!-- <div id="botsContainer"> -->
+         <ul class ="bot">
+            <li class="image"><img src= {{avatar}} ></li>
+            <li class="name"> {{name}} </li>
+            <li class="job"> {{job}}
+               {{^job}}
+                  <li class="noJob"> Available for hire </li>
+               {{/job}}
+            </li>
+            <li class="company"> {{company}} </li>
+         </ul>
+      <!-- </div> -->
+      {{/bots}}
 
    </body>
 </html>
