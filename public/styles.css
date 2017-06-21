@@ -1,0 +1,60 @@
+body {
+   width: 100vw;
+   min-height: 100vh;
+   box-sizing:border-box;
+   font-size: 100%;
+   font-family: sans-serif;
+}
+
+#botsContainer {
+   width: 100vw;
+   height: 100%;
+   /*display: grid;
+   grid-template-columns: 25% 25% 25% 25%;
+   padding: 1em;*/
+   display: flex;
+   flex-flow: wrap row;
+   justify-content: center;
+}
+
+ul {
+   position: relative;
+   width: 23vw;
+   height: 23vw;
+   margin: calc(10px);
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+   list-style-type: none;
+   border: solid lightgrey 1px;
+   border-radius: 3px;
+   line-height: 1.25;
+}
+
+li {
+   position: relative;
+}
+
+.name {
+   font-size: 2.25vw;
+   font-weight: bold;
+   color: #2A71CE;
+}
+
+.job {
+   font-size: 1.25vw;
+}
+
+.noJob {
+   font-size: 1.25vw;
+}
+
+.company {
+   font-size: 1.25vw;
+}
+
+.image, img {
+   width: 15vw;
+   height: 15vw;
+   align-self: center;
+}
