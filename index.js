@@ -37,6 +37,19 @@ app.get('/', function (req, res) {
 //
 //    `;
 // }
+
+// app.get('/', function (req, res) {
+//    res.render('index', {users: data.users})
+//       <ul class="botcontainer">
+//        <li>
+//          <img src={user.avatar} alt="oops!-caught-in-the-cloud">
+//          </li>
+//          <li>{bot.name}</li>
+//          <li>{bot.job}</li>
+//          <li>{bot.company}</li>
+//          </ul>
+//
+// })
 //
 //
 // app.get('/', function (req, res) {
