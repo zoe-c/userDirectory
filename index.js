@@ -21,3 +21,7 @@ app.get('/', function (req, res) {
 app.listen(3000, function () {
   console.log('App Start Successful!')
 });
+
+// app.get('/:username', function(req, res) {
+   // req.params.user.name 
+})
